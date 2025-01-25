@@ -21,8 +21,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Windows kullanıcı adını al
-windows_user = os.getlogin()
+# windows_user = os.getlogin()  # Bu satırı kaldırın veya aşağıdaki gibi değiştirin
+windows_user = "user"  # Sabit bir değer kullanın
 logger.info(f"Chat initiated by Windows user: {windows_user}")
 
 # JSON dosyalarını yükleme fonksiyonu
